@@ -1,6 +1,10 @@
 # Recommendation-System-for-Products
 This repository comprises of two different recommendation algorithms at a retailer’s end which could help recognize similar and popular products and suggest recommendations for users.
 
+<p align="center">
+  <img width="460" height="400" src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/Recc%20System.jpg">
+</p>
+
 ## Data Collection
 Data for this project was collected from [Jianmo Ni’s](https://nijianmo.github.io/amazon/index.html) github profile. The data deals with sports and outdoor equipment. The dataset contains 435924 rows and 12 columns. Originally, the dataset was contained as a .json file zipped into .gz which was extracted using pyspark shell script.
 
