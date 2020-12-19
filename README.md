@@ -5,6 +5,7 @@ This repository comprises of two different recommendation algorithms at a retail
   <img width="460" height="400" src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/Recc%20System.jpg">
 </p>
 
+## Contents
 1. [Data Collection](https://github.com/krishangi-deka/Recommendation-System-for-Products#data-collection)
 2. [Techniques Used](https://github.com/krishangi-deka/Recommendation-System-for-Products#techniques-used)
 3. [Results](https://github.com/krishangi-deka/Recommendation-System-for-Products#results)
