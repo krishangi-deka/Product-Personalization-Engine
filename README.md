@@ -1,5 +1,5 @@
 # Recommendation-System-for-Products
-This repository comprises of two different recommendation algorithms(ALS and K-Means Clustering) at a retailer’s end which could help recognize similar and popular products and suggest recommendations for users.
+This repository comprises of two different recommendation algorithms([ALS](https://github.com/krishangi-deka/Recommendation-System-for-Products#collaborative-filtering-using-alternating-least-squaresals) and [K-Means Clustering](https://github.com/krishangi-deka/Recommendation-System-for-Products#content-based-filtering-using-k-means)) at a retailer’s end which could help recognize similar and popular products and suggest recommendations for users.
 
 <p align="center">
   <img width="460" height="400" src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/Recc%20System.jpg">
