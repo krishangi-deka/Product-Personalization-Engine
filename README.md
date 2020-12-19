@@ -5,6 +5,12 @@ This repository comprises of two different recommendation algorithms at a retail
   <img width="460" height="400" src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/Recc%20System.jpg">
 </p>
 
+1. [Data Collection](https://github.com/krishangi-deka/Recommendation-System-for-Products#data-collection)
+2. [Techniques Used](https://github.com/krishangi-deka/Recommendation-System-for-Products#techniques-used)
+3. [Results](https://github.com/krishangi-deka/Recommendation-System-for-Products#results)
+4. [Conclusion and Future Scopes](https://github.com/krishangi-deka/Recommendation-System-for-Products#conclusion-and-future-scopes)
+5. [References](https://github.com/krishangi-deka/Recommendation-System-for-Products#references)
+
 ## Data Collection
 Data for this project was collected from [Jianmo Ni’s](https://nijianmo.github.io/amazon/index.html) github profile. The data deals with sports and outdoor equipment. The dataset contains 435924 rows and 12 columns. Originally, the dataset was contained as a .json file zipped into .gz which was extracted using pyspark shell script.
 
