@@ -67,3 +67,28 @@ The top 10 products for the search keyword "Skateboard" is shown below:
   <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/top10kmeans.jpg">
 </p>
 <p align="center">Fig: Recommendations</p>
+
+## Conclusion and Future Scopes
+Amongst the models implemented, ALS gives us better results and a more accurate recommendation system. ALS keeps into account user preferences and past history of users to customize better prediction of products to each user. Moreover, ALS can be generated using both user-user and item-item similarity. On the contrary, k-means is good when user data is not available to us and we still wish to provide recommendations to users. This can be used initially by new retailers to provide recommendations to their users since they do not have much customer data.
+However, the implementation of recommendation in this project is very raw and primitive in nature and there are numerous improvements and possibilities to improve the accuracy of the models. First of all, to make the predictions more accurate and realistic, data can be scrapped directly through retail sites using scraping tools for web pages. We could also collect data for product names, which is a limitation when it comes to the dataset used in this project. Product names would give us a more tangible recommendation system. Apart from that, more sophisticated models like topic modelling or LDA(Latent Dirichlet Allocation) can be implemented to assign and identify words in k-means clusters, in which the assigned topics and their associated score with words can act as a prediction logic ground.      
+
+## References
+1. [https://realpython.com/build-recommendation-engine-collaborative-filtering/#:~:text=Remove%20ads-,What%20Is%20Collaborative%20Filtering%3F,similar%20to%20a%20particular%20user.](https://realpython.com/build-recommendation-engine-collaborative-filtering/#:~:text=Remove%20ads-,What%20Is%20Collaborative%20Filtering%3F,similar%20to%20a%20particular%20user.) 
+
+2. [https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada) 
+
+3. [https://spark.apache.org/docs/2.2.0/ml-collaborative-filtering.html](https://spark.apache.org/docs/2.2.0/ml-collaborative-filtering.html)
+
+4. [https://stackoverflow.com/questions/56642128/how-to-use-k-means-for-a-product-recommendation-dataset](https://stackoverflow.com/questions/56642128/how-to-use-k-means-for-a-product-recommendation-dataset)
+
+5. [https://www.kaggle.com/shawamar/product-recommendation-system-for-e-commerce](https://www.kaggle.com/shawamar/product-recommendation-system-for-e-commerce) 
+
+6. [https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/](https://www.analyticsvidhya.com/blog/2019/08/comprehensive-guide-k-means-clustering/)
+
+7. [https://stanford.edu/~cpiech/cs221/handouts/kmeans.html](https://stanford.edu/~cpiech/cs221/handouts/kmeans.html
+
+8. [https://github.com/LaxmiChaudhary/Amzon-Product-Recommendation ](https://github.com/LaxmiChaudhary/Amzon-Product-Recommendation)
+
+9. [https://spark.apache.org/docs/latest/ml-clustering.html#k-means](https://spark.apache.org/docs/latest/ml-clustering.html#k-means)
+
+10. [https://spark.apache.org/docs/latest/mllib-feature-extraction.html#tf-idf](https://spark.apache.org/docs/latest/mllib-feature-extraction.html#tf-idf) 
