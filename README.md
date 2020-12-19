@@ -2,7 +2,7 @@
 This repository comprises of two different recommendation algorithms at a retailer’s end which could help recognize similar and popular products and suggest recommendations for users.
 
 <p align="center">
-  <img width="460" height="400" src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/Recc%20System.jpg">
+  <img width="460" height="400" src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/Recc%20System.jpg">
 </p>
 
 ## Data Collection
@@ -23,4 +23,39 @@ Content Based Filtering: This technique uses features of items to recommend othe
 K-Means: K- means is a popularly used unsupervised learning algorithm. K refers to the number of centroids and allocates each centroid with data points closest to it. Optimal value for k can be found by 2 methods: 1) Silhouette score and 2)Elbow method. We have used the Silhouette method to find the optimal value of K.
 The reviewText column data had to be pre-processed in order to provide more accuracy in text search. All punctuations and numbers were removed using python regular expressions. Stopwords were also removed. Moreover, in order to convert words into numerical statistics, term frequency–inverse document frequency(TF-IDF) was used. Tf in tf-idf weight measures frequency of terms in a document, and idf measure importance of that given term in given corpus. After performing the k-means algorithm, silhouette method was implemented in order to find the best k value in the range 3-17.     
 
+## Results
+### ALS 
+Columns Used - productID(asin), reviewerID, rating(overall). 
+The dataset was divided using a train-test split of 80-20%. An ALS matrix regression was performed on the training set to predict on the test data with an initial rmse of 1.86
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/initial_rmse.jpg">
+</p>
+(fig.1)
+
+Figure 4: RSME on initial model
+
+To tune the model, a 10 fold cross validation and a parameter grid builder was used where the model rank was increased to 25 to get better results. A 10% improvement in the rmse value was found in the best model whose rmse value reduced to 1.76(fig.2).
+
+Figure 5: RMSE after Cross Validation 
+
+The output of the final recommendation (fig.3) by the best model , which predicts the top 10 products for the first 10 users.  
+           
+Figure 6:  Top 10 products for first 10 users
+
+
+
+
+K-Means
+The columns used for this analysis were - productID(asin), reviewerID, reviewText. The best k chosen for this analysis was 10. The figure below shows the silhouette scores for our model for k in range (3-17). Even though the highest score is 0.77 for 3 clusters, considering the size of our dataset, we chose our optimal k as 10.  
+
+Figure 7. Various Silhouette scores for optimal “k” value 
+
+Figure 8 and Figure 9:  Showing clusters for k=10 and k=3 respectively
+Showing the head of dataframe with unique productIDs in each cluster:
+
+Figure 10. Clusters
+
+The top 10 products for the search keyword "Skateboard" is shown below:
+
+Figure 11. Recommendations
 
