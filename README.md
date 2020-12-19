@@ -30,29 +30,39 @@ The dataset was divided using a train-test split of 80-20%. An ALS matrix regres
 <p align="center">
   <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/initial_rmse.jpg">
 </p>
-<p align="center">RMSE on initial model</p>
-To tune the model, a 10 fold cross validation and a parameter grid builder was used where the model rank was increased to 25 to get better results. A 10% improvement in the rmse value was found in the best model whose rmse value reduced to 1.76(fig.2).
+<p align="center">Fig: RMSE on initial model</p>
+To tune the model, a 10 fold cross validation and a parameter grid builder was used where the model rank was increased to 25 to get better results. A 10% improvement in the rmse value was found in the best model whose rmse value reduced to 1.76.
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/final_rmse.jpg">
+</p>
+<p align="center">Fig: RMSE after Cross Validation</p>
 
-Figure 5: RMSE after Cross Validation 
+The output of the final recommendation by the best model , which predicts the top 10 products for the first 10 users is shown below.  
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/top10als.jpg">
+</p>
+<p align="center">Fig: Top 10 products for first 10 users</p>
 
-The output of the final recommendation (fig.3) by the best model , which predicts the top 10 products for the first 10 users.  
-           
-Figure 6:  Top 10 products for first 10 users
-
-
-
-
-K-Means
+### K-Means
 The columns used for this analysis were - productID(asin), reviewerID, reviewText. The best k chosen for this analysis was 10. The figure below shows the silhouette scores for our model for k in range (3-17). Even though the highest score is 0.77 for 3 clusters, considering the size of our dataset, we chose our optimal k as 10.  
 
-Figure 7. Various Silhouette scores for optimal “k” value 
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/silhoutte.jpg">
+</p>
+<p align="center">Fig: Various Silhouette scores for optimal k value</p>
 
-Figure 8 and Figure 9:  Showing clusters for k=10 and k=3 respectively
-Showing the head of dataframe with unique productIDs in each cluster:
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/cluster10.jpg">
+</p>
+<p align="center">Fig:Showing clusters for k=10</p>
 
-Figure 10. Clusters
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/cluster_head.jpg">
+</p>
+<p align="center">Fig: Showing the head of dataframe with unique productIDs in each cluster</p>
 
 The top 10 products for the search keyword "Skateboard" is shown below:
-
-Figure 11. Recommendations
-
+<p align="center">
+  <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/top10kmeans.jpg">
+</p>
+<p align="center">Fig: Recommendations</p>
