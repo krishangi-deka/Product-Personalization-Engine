@@ -30,10 +30,7 @@ The dataset was divided using a train-test split of 80-20%. An ALS matrix regres
 <p align="center">
   <img src="https://github.com/krishangi-deka/Recommendation-System-for-Products/blob/main/images/initial_rmse.jpg">
 </p>
-(fig.1)
-
-Figure 4: RSME on initial model
-
+<p align="center">RMSE on initial model</p>
 To tune the model, a 10 fold cross validation and a parameter grid builder was used where the model rank was increased to 25 to get better results. A 10% improvement in the rmse value was found in the best model whose rmse value reduced to 1.76(fig.2).
 
 Figure 5: RMSE after Cross Validation 
