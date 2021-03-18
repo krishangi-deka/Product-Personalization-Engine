@@ -1,4 +1,4 @@
-# Recommendation-System-for-Products
+# Product Personalization Engine (Recommendation-System)
 This repository comprises of two different recommendation algorithms([ALS](https://github.com/krishangi-deka/Recommendation-System-for-Products#collaborative-filtering-using-alternating-least-squaresals) and [K-Means Clustering](https://github.com/krishangi-deka/Recommendation-System-for-Products#content-based-filtering-using-k-means)) at a retailer’s end which could help recognize similar and popular products and suggest recommendations for users.
 
 <p align="center">
